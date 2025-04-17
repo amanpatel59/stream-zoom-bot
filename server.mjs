@@ -123,10 +123,12 @@ async function setupRealtimeClient(realtimeClient) {
 }
 
 // Start the server
-serve({
-  fetch: app.fetch,
-  hostname: "0.0.0.0",
-  port: 3000,
-});
+// serve({
+//   fetch: app.fetch,
+//   hostname: "0.0.0.0",
+//   port: 3000,
+// });
+
+export default app;
 
 console.log(`Server started on :3000`);
